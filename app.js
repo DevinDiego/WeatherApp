@@ -15,7 +15,7 @@ app.get("/", function(req, res) {
 app.post("/", function(req, res) {
   const zipcode = req.body.zipCode;
 
-  const apiKey = "My secret api key";
+  const apiKey = "Devin's secret api key";
   const url = "https://api.openweathermap.org/data/2.5/weather?zip=" + zipcode + ",us&appid=" + apiKey + "&units=imperial";
 
   https.get(url, function(response) {
